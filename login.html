@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>My Webpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header" class="py-2" role="main-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light p-0">
+          <a class="navbar-brand" href="#"><img class="img-fluid" src="./images/logo-red.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fa fa-home mr-1" aria-hidden="true"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-phone mr-1" aria-hidden="true"></i>Contact</a>
+              </li>
+              <li class="divider">
+              </li>
+              <li class="nav-item login-link">
+                <a class="nav-link" href="#"><i class="fa fa-sign-in mr-1" aria-hidden="true"></i>Login</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-user-circle-o mr-1" aria-hidden="true"></i><div class="username-holder">Ali Gulzar</div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"><i class="fa fa-sign-out mr-1" aria-hidden="true"></i>Sign Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="form-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-6">
+              <div class="form text-muted">
+                <div class="form-holder">
+                  <div class="form-header text-center">
+                    <h4>Login to Your Account</h4>
+                    <p><small>Use your one-time username and password to login.</small></p>
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label for="email">Email address</label>
+                      <div class="input-container">
+                        <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                        <div class="icon-holder"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Email is Required</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <div class="input-container">
+                        <input type="password" class="form-control" id="password">
+                        <div class="icon-holder"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Password is Required</small>
+                      <div class="text-right"><a href="#" class="text-primary"><small>Forgot Your Password?</small></a></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100"><i class="fa fa-sign-in mr-2" aria-hidden="true"></i>Sign in</button>
+                  </form>
+                  <p class="text-center mt-2"><small>Don't Have a account?<a href="#" class="text-primary ml-2">Create One</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-6">
+              <div class="form text-muted">
+                <div class="form-holder">
+                  <div class="form-header text-center">
+                    <h4>Create a New Account</h4>
+                    <p><small>Create Account to get the Best Poems in the market.</small></p>
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <div class="input-container">
+                        <input type="text" class="form-control" id="username" placeholder="John Doe">
+                        <div class="icon-holder"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Username is Required</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email address</label>
+                      <div class="input-container">
+                        <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                        <div class="icon-holder"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Email is Required</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <div class="input-container">
+                        <input type="password" class="form-control" id="password">
+                        <div class="icon-holder"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Password is Required</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="confirm_password">Confirrm Password</label>
+                      <div class="input-container">
+                        <input type="password" class="form-control" id="confirm_password">
+                        <div class="icon-holder"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Password Mismatch</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100"><i class="fa fa-sign-in mr-2" aria-hidden="true"></i>Sign Up</button>
+                  </form>
+                  <p class="text-center mt-2"><small>Already Have an Account?<a href="#" class="text-primary ml-2">Sign In</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-6">
+              <div class="form text-muted">
+                <div class="form-holder">
+                  <div class="form-header text-center">
+                    <i class="fa fa-lock"></i>
+                    <h4>Forgot Password?</h4>
+                    <p><small>Please Enter your email and the new password will be send to your email.</small></p>
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label for="email">Email address</label>
+                      <div class="input-container">
+                        <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                        <div class="icon-holder"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Email is Required</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Reset my Password</button>
+                  </form>
+                  <p class="text-center mt-2"><small>Already Have an Account?<a href="#" class="text-primary ml-2">Sign In</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-6">
+              <div class="form text-muted">
+                <div class="form-holder">
+                  <div class="form-header text-center">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    <h4>Update Your Password</h4>
+                    <p><small>Please Enter your Email, Current Password and New Password, your password will be changed.</small></p>
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label for="email">Email address</label>
+                      <div class="input-container">
+                        <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                        <div class="icon-holder"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Email is Required</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="current_password">Current Password</label>
+                      <div class="input-container">
+                        <input type="password" class="form-control" id="current_password">
+                        <div class="icon-holder"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Password is Required</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="new_password">New Password</label>
+                      <div class="input-container">
+                        <input type="password" class="form-control" id="new_password">
+                        <div class="icon-holder"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Password is Required</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="confirm_password">Confirrm Password</label>
+                      <div class="input-container">
+                        <input type="password" class="form-control" id="confirm_password">
+                        <div class="icon-holder"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                      </div>
+                      <small class="form-error text-danger">Password Mismatch</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Update Password</button>
+                  </form>
+                  <p class="text-center mt-2"><small>Already Have an Account?<a href="#" class="text-primary ml-2">Sign In</a></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="py-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-7">
+            <small>&copy 2020 | All Right Reserved</small>
+          </div>
+          <div class="col-5 text-right">
+            <a href="#"><img src="./images/logo-white.png" class="img-fluid footer-logo"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

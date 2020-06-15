@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>My Webpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header" class="py-2" role="main-header">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light p-0">
+            <a class="navbar-brand" href="#"><img class="img-fluid" src="./images/logo-red.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><i class="fa fa-home mr-1" aria-hidden="true"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-phone mr-1" aria-hidden="true"></i>Contact</a>
+                </li>
+                <li class="divider">
+                </li>
+                <li class="nav-item login-link">
+                  <a class="nav-link" href="#"><i class="fa fa-sign-in mr-1" aria-hidden="true"></i>Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user-circle-o mr-1" aria-hidden="true"></i><div class="username-holder">Ali Gulzar</div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"><i class="fa fa-sign-out mr-1" aria-hidden="true"></i>Sign Out</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <main id="main">
+      <section class="poem-container">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="categories mb-4">
+                <button class="btn btn-outline-primary active">Regular Poems</button>
+                <button class="btn btn-outline-primary">Mushy Poems</button>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="poem-wrapper">
+                <div class="poem-heading">
+                  <h2 class="d-flex align-items-center justify-content-center">
+                    <img src="./images/bird-feather.png" alt="feather-img" class="img-fluid mr-2">
+                    <span class="heading-text">A Infinite Substance</span>
+                  </h2>
+                </div>
+                <div class="poem-content">
+                  <p>
+                    <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
+                    <span class="poem-text">
+                      Realized  <br>
+                      cordial dove it is a tale of tenacious graves the wet-winged smooth stone that shines in your peace.  <br>
+                      A guitar focuses  <br>
+                      its dream of a new ending, its old ending, the ending of the mirror order -  <br>
+                      its irreducable bloodied irons. 
+                    </span>
+                    <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
+                   </p>
+                   <button class="btn like-btn border-0 p-0"><i class="fa fa-thumbs-up mr-2" aria-hidden="true"></i>Like</button>
+                </div>
+                <div class="text-center">
+                  <span class="author-name">Author Name</span>
+                </div>
+              </div>
+              <div class="btn-holder d-flex justify-content-center justify-content-md-end">
+                <button class="btn btn-outline-primary"><i class="fa fa-arrow-left mr-2"></i>Back</button>
+                <button class="btn btn-outline-primary">Next<i class="fa fa-arrow-right ml-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="py-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-7">
+            <small>&copy 2020 | All Right Reserved</small>
+          </div>
+          <div class="col-5 text-right">
+            <a href="#"><img src="./images/logo-white.png" class="img-fluid footer-logo"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

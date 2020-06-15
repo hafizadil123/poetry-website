@@ -1,0 +1,208 @@
+#main{
+  min-height: calc(100vh - 133px);
+  margin:81px 0 0;
+}
+.form-group{
+  .form-error{
+    display: none;
+  }
+  &.required{
+    .form-error{
+      display: block;
+    }
+  }
+}
+.form-section{
+  min-height: calc(100vh - 133px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:1rem 0;
+  @include media-breakpoint-up(sm){
+    background-image: url("./../images/website-parallax-background-C.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    padding:3rem 0;
+  }
+  .form{
+    position: relative;
+    @include media-breakpoint-up(sm){
+      z-index: 1;
+      &::after,&::before{
+        content:"";
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        top:0;
+        left:0;
+        background: rgba(#fafafa,0.5);
+        position: absolute;
+        box-shadow:0px 0px 13px rgba(0, 0, 0, .4);
+      }
+      &::after{
+        transform: rotate(3deg);
+      }
+      &::before{
+        transform: rotate(6deg);
+      }
+    }
+    .form-header{
+      border-bottom: 1px solid $gray-300;
+      margin:0 0 1rem;
+      i{
+        font-size: 5rem;
+      }
+    }
+    .form-holder{
+      padding:2rem;
+      background-color: $white;
+      border: 1px solid $gray-300;
+      box-shadow:0px 0px 13px rgba(0, 0, 0, .4);
+    }
+  }
+  .input-container{
+    position: relative;
+    .form-control{
+      padding-right:3rem;
+    }
+    .icon-holder{
+      position: absolute;
+      top:50%;
+      transform: translate(0,-50%);
+      right:10px;
+      width:1rem;
+      .fa{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+}
+.contact{
+  min-height: calc(100vh - 133px);
+  .banner{
+    min-height:330px;
+    background-image: url("./../images/contact-banner.jpg");
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color:$white;
+    h1{
+      font-weight: 700;
+    }
+  }
+  .contact-form{
+    padding:3rem 0;
+    .contact-details{
+      li{
+        padding:1rem 0;
+        
+        @include media-breakpoint-up(md){
+          border-bottom: 1px solid $gray-300;
+        }
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+      a{
+        color: $secondary;
+      }
+    }
+    .form-control{
+      border-radius: 0;
+    }
+    .submit-btn{
+      width:100%;
+      @include media-breakpoint-up(md){
+        width:200px;
+        float: right;
+      }
+    }
+  }
+}
+.poem-container{
+  min-height: calc(100vh - 133px);
+  padding:3rem 0;
+  background-image: linear-gradient(rgba($black,0.6),rgba($black,0.6)),url("./../images/Web-design-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  color:$white;
+  .categories{
+    padding:2rem;
+    box-shadow:0px 0px 13px rgba($white, .5);
+    border-radius: 5px;
+    border:1px solid $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button + button{
+      margin:0 0 0 1rem;
+    }
+    button{
+      color:$white;
+    }
+  }
+  .poem-wrapper{
+    margin:0 0 1rem;
+    padding:0 0 1rem;
+    border-bottom: 1px solid $gray-300;
+    .poem-heading{
+      margin:0 0 1rem;
+      padding:0 0 1rem;
+      border-bottom: 1px solid $gray-300;
+      h2{
+        img{
+          max-width: 60px;
+        }
+      }
+    }
+    .poem-content{
+      margin:0 0 2rem;
+    }
+    .like-btn{
+      color:$primary;
+      background-color: transparent;
+      border-radius: 0;
+      &:hover{
+        color:$white;
+      }
+    }
+    .author-name{
+      text-align: center;
+      font-style: italic;
+      position: relative;
+      padding:0 .5rem;
+      &::before,&::after{
+        content:"";
+        position: absolute;
+        width:10px;
+        height:1px;
+        background-color:$white;
+        top:50%;
+        transform: translateY(-50%);
+      }
+      &::before{
+        left:100%;
+      }
+      &::after{
+        right:100%;
+      }
+    }
+  }
+  .btn-holder{
+    button + button{
+      margin:0 0 0 1rem;
+    }
+    button{
+      min-width: 140px;
+      border:0;
+      border-radius: 0;
+      color:$white;
+    }
+  }
+}
